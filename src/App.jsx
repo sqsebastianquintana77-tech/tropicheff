@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Utensils, 
@@ -29,12 +29,12 @@ const Navbar = () => {
             <History size={16} /> Nuestra Historia
           </a>
           <a href="#menu" className="nav-btn-secondary">
-            <Utensils size={16} /> Menú
+            <Utensils size={16} /> MenÃº
           </a>
           <a href="#cashea" className="nav-btn-secondary">
             <CreditCard size={16} /> Pagar con Cashea
           </a>
-          <a href="https://wa.me/5801429287880?text=Hola,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20en%20Tropi%20Chef!" target="_blank" rel="noopener noreferrer" className="btn-small">Pedir Ahora</a>
+          <a href="https://wa.me/5804129287880?text=Hola,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20en%20Tropi%20Chef!" target="_blank" rel="noopener noreferrer" className="btn-small">Pedir Ahora</a>
         </div>
       </div>
     </nav>
@@ -55,13 +55,13 @@ const Hero = () => {
           viewport={{ once: true }}
           className="hero-text-content"
         >
-          <span className="eyebrow">Auténtica Cocina Venezolana</span>
-          <h1>¿Hallacas en {mesActual}? <br/><span className="script-font">¡Claro que sí!</span></h1>
+          <span className="eyebrow">AutÃ©ntica Cocina Venezolana</span>
+          <h1>Â¿Hallacas en {mesActual}? <br/><span className="script-font">Â¡Claro que sÃ­!</span></h1>
           <p className="hero-description">
-            Disfruta del sabor más reconfortante de Venezuela durante todo el año. Tradición, amor y los 15 años de maestría de la Chef Nohemí Castro en cada bocado.
+            Disfruta del sabor mÃ¡s reconfortante de Venezuela durante todo el aÃ±o. TradiciÃ³n, amor y los 15 aÃ±os de maestrÃ­a de la Chef NohemÃ­ Castro en cada bocado.
           </p>
           <div className="hero-actions">
-            <button className="btn-primary">Ver Menú de Hoy <ShoppingBag size={18}/></button>
+            <button className="btn-primary">Ver MenÃº de Hoy <ShoppingBag size={18}/></button>
             <div className="cashea-inline">
               <img src="/cashea.jpg" alt="Cashea" className="cashea-icon-img" />
               <span>Paga en cuotas con <strong>Cashea</strong></span>
@@ -85,27 +85,27 @@ const StorySection = () => (
   <section id="historia" className="story-section">
     <div className="container story-grid">
       <div className="story-image">
-        <img src="/nohemi.PNG" alt="Chef Nohemí Castro" className="chef-portrait" />
+        <img src="/nohemi.PNG" alt="Chef NohemÃ­ Castro" className="chef-portrait" />
       </div>
       <div className="story-content">
         <span className="section-tag">La Maestra de la Cocina</span>
-        <h2>El Legado de Nohemí Castro</h2>
+        <h2>El Legado de NohemÃ­ Castro</h2>
         <p>
-          Desde Los Teques para todo el país, la Chef Nohemí ha dedicado más de una década a perfeccionar las recetas que heredó de su familia. En Tropi Chef, no solo servimos comida; servimos memorias.
+          Desde Los Teques para todo el paÃ­s, la Chef NohemÃ­ ha dedicado mÃ¡s de una dÃ©cada a perfeccionar las recetas que heredÃ³ de su familia. En Tropi Chef, no solo servimos comida; servimos memorias.
         </p>
         <div className="story-features">
           <div className="s-feature">
             <Utensils className="s-icon" />
             <div>
-              <h4>Recetas Auténticas</h4>
-              <p>Sin atajos. Usamos ingredientes de primera calidad para ese sabor hogareño real.</p>
+              <h4>Recetas AutÃ©nticas</h4>
+              <p>Sin atajos. Usamos ingredientes de primera calidad para ese sabor hogareÃ±o real.</p>
             </div>
           </div>
           <div className="s-feature">
             <History className="s-icon" />
             <div>
-              <h4>Hallacas Todo el Año</h4>
-              <p>Porque la navidad es un sentimiento que se puede comer cualquier día.</p>
+              <h4>Hallacas Todo el AÃ±o</h4>
+              <p>Porque la navidad es un sentimiento que se puede comer cualquier dÃ­a.</p>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@ const StorySection = () => (
 const menuItems = [
   {
     id: 1,
-    name: "Pabellón Criollo",
+    name: "PabellÃ³n Criollo",
     image: "/pabellon.jpg",
     description: "El plato nacional por excelencia. Carne mechada, caraotas negras, arroz blanco y tajadas fritas. Un abrazo en cada bocado.",
     price: "$00.00",
@@ -126,14 +126,14 @@ const menuItems = [
     id: 2,
     name: "Cachapa con Queso",
     image: "/cachapa.jpg",
-    description: "Dulce, tierna y rebosante de auténtico queso de mano fundido. El equilibrio perfecto de sabores de nuestra tierra.",
+    description: "Dulce, tierna y rebosante de autÃ©ntico queso de mano fundido. El equilibrio perfecto de sabores de nuestra tierra.",
     price: "$00.00",
   },
   {
     id: 3,
-    name: "Tequeños",
-    image: "/tequeños.jpg",
-    description: "Los reyes de la fiesta. Dedos de queso envueltos en masa crujiente, dorados a la perfección.",
+    name: "TequeÃ±os",
+    image: "/tequeÃ±os.jpg",
+    description: "Los reyes de la fiesta. Dedos de queso envueltos en masa crujiente, dorados a la perfecciÃ³n.",
     price: "$00.00",
   },
   {
@@ -147,21 +147,21 @@ const menuItems = [
     id: 5,
     name: "Desayuno Criollo",
     image: "/desayuno_criollo.jpg",
-    description: "La mejor manera de empezar el día: arepitas, perico, caraotas refritas, carne mechada y queso rallado.",
+    description: "La mejor manera de empezar el dÃ­a: arepitas, perico, caraotas refritas, carne mechada y queso rallado.",
     price: "$00.00",
   },
   {
     id: 6,
     name: "Empanadas",
     image: "/empanada.jpg",
-    description: "Masa de maíz amarillo, fritas y crujientes con el clásico guiso de la abuela. ¡No te puedes comer solo una!",
+    description: "Masa de maÃ­z amarillo, fritas y crujientes con el clÃ¡sico guiso de la abuela. Â¡No te puedes comer solo una!",
     price: "$00.00",
   },
   {
     id: 7,
     name: "Pastelitos Andinos",
     image: "/pastelitos.jpg",
-    description: "Tradición de los Andes en tu mesa. Rellenos de carne con arroz, pollo o queso, fritos hasta inflar.",
+    description: "TradiciÃ³n de los Andes en tu mesa. Rellenos de carne con arroz, pollo o queso, fritos hasta inflar.",
     price: "$00.00",
   },
   {
@@ -175,7 +175,7 @@ const menuItems = [
     id: 9,
     name: "Ceviche Tropical",
     image: "/ceviche.jpg",
-    description: "Una fusión fresca de sabores caribeños. Pescado fresco marinado en cítricos con un toque picante.",
+    description: "Una fusiÃ³n fresca de sabores caribeÃ±os. Pescado fresco marinado en cÃ­tricos con un toque picante.",
     price: "$00.00",
   }
 ];
@@ -185,8 +185,8 @@ const MenuSection = () => (
     <div className="container">
       <div className="menu-header">
         <span className="section-tag">De Nuestra Cocina a tu Mesa</span>
-        <h2>Nuestro Menú Tradicional</h2>
-        <p className="menu-subtitle">Descubre los sabores auténticos que preparamos con amor, listos para disfrutar y pagar cómodamente.</p>
+        <h2>Nuestro MenÃº Tradicional</h2>
+        <p className="menu-subtitle">Descubre los sabores autÃ©nticos que preparamos con amor, listos para disfrutar y pagar cÃ³modamente.</p>
       </div>
       
       <div className="menu-grid">
@@ -207,9 +207,9 @@ const MenuSection = () => (
               <p className="menu-description">{item.description}</p>
               <div className="cashea-badge-small">
                 <img src="/cashea.jpg" alt="Cashea" className="cashea-icon-img" />
-                <span>Llévalo en cuotas con <strong>Cashea</strong></span>
+                <span>LlÃ©valo en cuotas con <strong>Cashea</strong></span>
               </div>
-              <a href="https://wa.me/5801429287880?text=Hola,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20en%20Tropi%20Chef!" target="_blank" rel="noopener noreferrer" className="btn-menu-action">
+              <a href="https://wa.me/5804129287880?text=Hola,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20en%20Tropi%20Chef!" target="_blank" rel="noopener noreferrer" className="btn-menu-action">
                 Pedir Ahora <ArrowRight size={16} />
               </a>
             </div>
@@ -228,14 +228,14 @@ const CasheaSection = () => (
           <img src="/cashea.jpg" alt="Cashea" className="cashea-logo-img" />
           <span className="cashea-tag">Disponible Ahora</span>
         </div>
-        <h2>Come hoy, paga después en <span className="blue-text">cuotas sin interés</span></h2>
+        <h2>Come hoy, paga despuÃ©s en <span className="blue-text">cuotas sin interÃ©s</span></h2>
         <p>En Tropi Chef queremos que disfrutes sin preocupaciones. Por eso somos aliados oficiales de Cashea.</p>
         <ol className="cashea-steps">
           <li>Elige tus platos favoritos.</li>
           <li>Selecciona Cashea al pagar.</li>
-          <li>Paga tu primera cuota y el resto después.</li>
+          <li>Paga tu primera cuota y el resto despuÃ©s.</li>
         </ol>
-        <button className="btn-outline-blue">Saber más sobre Cashea <ArrowRight size={18}/></button>
+        <button className="btn-outline-blue">Saber mÃ¡s sobre Cashea <ArrowRight size={18}/></button>
       </div>
     </div>
   </section>
@@ -259,7 +259,7 @@ const Footer = () => {
           <img src="/tropichef_logo.jpeg" alt="Tropi Chef Logo" className="footer-logo" />
           <h3>TROPI CHEF</h3>
         </div>
-        <p>Sabor que enamora, tradición que perdura. El auténtico sazón venezolano.</p>
+        <p>Sabor que enamora, tradiciÃ³n que perdura. El autÃ©ntico sazÃ³n venezolano.</p>
         <div className="social-links">
           <a href="https://www.instagram.com/tropicheff/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -271,7 +271,7 @@ const Footer = () => {
       </div>
       
       <div className="footer-links">
-        <h4>Ubicación</h4>
+        <h4>UbicaciÃ³n</h4>
         <ul className="footer-list">
           <li><MapPin size={16} className="text-yellow" /> <span>Los Teques, Edo. Miranda, Venezuela.</span></li>
           <li>
@@ -290,9 +290,9 @@ const Footer = () => {
       </div>
 
       <div className="footer-cta">
-        <h4>¿Antojo de Hallaca?</h4>
-        <p>Visítanos o pide para llevar fácilmente desde tu celular.</p>
-        <a href="https://wa.me/5801429287880?text=Hola,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20en%20Tropi%20Chef!" target="_blank" rel="noopener noreferrer" className="btn-primary btn-footer">
+        <h4>Â¿Antojo de Hallaca?</h4>
+        <p>VisÃ­tanos o pide para llevar fÃ¡cilmente desde tu celular.</p>
+        <a href="https://wa.me/5804129287880?text=Hola,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20en%20Tropi%20Chef!" target="_blank" rel="noopener noreferrer" className="btn-primary btn-footer">
           <Phone size={18} /> Pedir por WhatsApp
         </a>
       </div>
@@ -321,7 +321,7 @@ const Footer = () => {
 
 const FloatingWhatsApp = () => (
   <a 
-    href="https://wa.me/5801429287880?text=Hola,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20en%20Tropi%20Chef!" 
+    href="https://wa.me/5804129287880?text=Hola,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20en%20Tropi%20Chef!" 
     className="floating-wa"
     target="_blank"
     rel="noopener noreferrer"
@@ -348,3 +348,4 @@ const App = () => {
 };
 
 export default App;
+
