@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+  /* Paleta Tropi Chef INVERTIDA */
+  --brand-yellow: #FACC15;
+  --brand-brown: #451A03;
+  --brand-brown-darker: #2D0F02;
+  --brand-brown-light: #78350F;
+  --brand-cream: #FEFCE8;
+  --brand-paper: #FFFBEB;
+  --brand-green: #22C55E;
+  --brand-hair: #92400E; /* Terracota del cabello en el logo */
+  
+  --text-main: #FEFCE8;
+  --text-muted: #FDE68A;
+  
+  --bg-main: #451A03;
+  --bg-secondary: #2D0F02;
+  
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'Outfit', sans-serif;
+  
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow: 0 10px 30px rgba(69, 26, 3, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--text-main);
+}
+
+h1 { font-size: clamp(2.2rem, 8vw, 4rem); }
+h2 { font-size: clamp(1.8rem, 6vw, 2.8rem); }
+h3 { font-size: clamp(1.4rem, 4vw, 2rem); }
+
+/* Utilitarios de Diseño */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+.btn-primary {
+  background-color: var(--brand-yellow);
+  color: var(--brand-brown);
+  padding: 1.2rem 2.5rem;
+  border-radius: 12px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: var(--transition);
+  box-shadow: 0 4px 0px #CA8A04;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background-color: white;
+  color: var(--brand-brown);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-primary:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0px #CA8A04;
+}
+
+/* Cashea Integration Component */
+.cashea-badge {
+  background: white;
+  border: 2px solid #000;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.cashea-highlight {
+  background: #E0F2FE;
+  color: #0369A1;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* Textures & Patterns */
+.pattern-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.83L1.205 55.454l-.83-.83L54.627 0zm-5.27 0l.83.83L0 50.186l-.83-.83L49.356 0zM59.897 0l.83.83L5.474 55.253l-.83-.83L59.897 0zM0 4.814l.83.83L55.186 60l-.83-.83L0 4.814zM0 10.083l.83.83L49.917 60l-.83-.83L0 10.083zm0 5.27l.83.83L44.648 60l-.83-.83L0 15.353zm0 5.27l.83.83L39.378 60l-.83-.83L0 20.622zm0 5.27l.83.83L34.108 60l-.83-.83L0 25.892zm0 5.27l.83.83L28.838 60l-.83-.83L0 31.162zm0 5.27l.83.83L23.568 60l-.83-.83L0 36.432zm0 5.27l.83.83L18.298 60l-.83-.83L0 41.702zm0 5.27l.83.83L13.028 60l-.83-.83L0 46.972zm0 5.27l.83.83L7.758 60l-.83-.83L0 52.242zm0 5.27l.83.83L2.488 60l-.83-.83L0 57.512zM60 4.814l-.83.83L4.814 60l.83-.83L60 4.814zm0 5.27l-.83.83L10.083 60l.83-.83L60 10.083zm0 5.27l-.83.83L15.353 60l.83-.83L60 15.353zm0 5.27l-.83.83L20.622 60l.83-.83L60 20.622zm0 5.27l-.83.83L25.892 60l.83-.83L60 25.892zm0 5.27l-.83.83L31.162 60l.83-.83L60 31.162zm0 5.27l-.83.83L36.432 60l.83-.83L60 36.432zm0 5.27l-.83.83L41.702 60l.83-.83L60 41.702zm0 5.27l-.83.83L46.972 60l.83-.83L60 46.972zm0 5.27l-.83.83L52.242 60l.83-.83L60 52.242zm0 5.27l-.83.83L57.512 60l.83-.83L60 57.512z' fill='%23FEFCE8' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
