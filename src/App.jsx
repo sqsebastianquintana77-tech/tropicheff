@@ -241,7 +241,17 @@ const CasheaSection = () => (
   </section>
 );
 
-const Footer = () => (
+const Footer = () => {
+  const [visitas, setVisitas] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch('https://api.counterapi.dev/v1/tropicheff/visitas/up')
+      .then(res => res.json())
+      .then(data => setVisitas(data.count))
+      .catch(() => setVisitas(null));
+  }, []);
+
+  return (
   <footer className="footer-modern">
     <div className="container footer-grid">
       <div className="footer-info">
@@ -290,14 +300,24 @@ const Footer = () => (
     <div className="footer-bottom">
       <div className="container bottom-flex">
         <p>Para Tropichef 2026 todos los derechos reservados.</p>
-        <div className="footer-credits cerotraba-credits">
-          <span>Realizado por CeroTraba</span>
-          <img src="/logo_limpio.png" alt="CeroTraba" className="cerotraba-logo" />
+        <div className="footer-bottom-right">
+          {visitas !== null && (
+            <div className="visitor-counter">
+              <span className="visitor-dot"></span>
+              <span>{visitas.toLocaleString()} visitas
+              </span>
+            </div>
+          )}
+          <div className="footer-credits cerotraba-credits">
+            <span>Realizado por CeroTraba</span>
+            <img src="/logo_limpio.png" alt="CeroTraba" className="cerotraba-logo" />
+          </div>
         </div>
       </div>
     </div>
   </footer>
-);
+  );
+};
 
 const FloatingWhatsApp = () => (
   <a 
